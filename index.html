@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>card</title>
+    <script
+      src="https://kit.fontawesome.com/d9f2f52de3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    <link rel="stylesheet" href="./js.js">
+    <script defer src="./js.js"></script>
+
+    
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .fun{
+        position: fixed;
+        display: none;
+        backdrop-filter: blur(2px);
+      }
+      .display-modal{
+        display: flex;
+      }
+      
+      .modal{
+        width: 100vw;
+        height: 100vh;
+        /* background-color: rgba(188, 139, 235, 0.541); */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* position: fixed; */
+        
+      }
+      .modaldiv{
+        width: 400px;
+        height: 400px;
+        background-color: rgba(27, 18, 32, 0.918);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 20px;
+        align-items: center;
+      
+        
+      }
+      .mid{
+        width: 200px;
+        margin-top: 0px;
+        text-align: center;
+        background-color: rgba(27, 18, 32, 0.918);
+        padding: 5px;
+        border-radius: 10px;
+        color: orangered;
+      }
+      .img{
+        margin-bottom: 0px;
+      }
+      .para{
+        text-align: center;
+        color: rgba(255, 255, 255, 0.945);
+      }
+      .you{
+        color: white;
+      }
+      .section {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(210, 189, 230, 0.137);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* z-index: 1; */
+      }
+      .class {
+        width: 400px;
+        height: 400px;
+        background-color: rgba(27, 18, 32, 0.918);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 20px;
+      }
+      .num {
+        background-color: rgb(53, 53, 65);
+        color: white;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+      }
+      .num1 {
+        background-color: gray;
+        color: wheat;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+      }
+      .num2 {
+        background-color: orangered;
+        color: white;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+      }
+      .number{
+        /* background-color: yellow; */
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .button{
+        height: 45px;
+        border-radius: 20px;
+        border: none;
+      }
+      .text{
+        color: rgb(150, 150, 127);
+      }
+      .h2{
+        color: white;
+      }
+      .button{
+        color: #ed8b02;
+        padding: 10px;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+      .buttonOn{
+        color: #ed8b02;
+        padding: 10px;
+        margin-top: 10px;
+        cursor: pointer;
+        border-radius: 20px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="fun">
+        <div class="modal">
+            <div class="modaldiv">
+                <div class="img">
+                    <dotlottie-player src="https://lottie.host/11fc000d-ac44-4365-b104-6845e7751eda/8ZA7GwEBqS.json" background="transparent" speed="1" style="width: 200px; height: 200px;" loop autoplay></dotlottie-player>
+                </div>
+                <div class="mid">
+                    <p>you selected four of five</p>
+                </div>
+                <h1 class="you">Thank You!</h1>
+                <p class="para">we appreciete you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch! </p>
+                <button class="button">OK</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section">
+      <div class="class">
+        <div class="num">
+          <i class="fa-solid fa-star fa-2xl" style="color: #ed8b02"></i>
+        </div>
+        <h2 class="h2">How do we help?</h2>
+        <p class="text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste enim
+          optio illo aut animi, sequi molestias. Asperiores aspernatur facilis
+          dolore.
+        </p>
+        <div class="number">
+          <div class="num">1</div>
+          <div class="num">2</div>
+          <div class="num">3</div>
+          <div class="num1">4</div>
+          <div class="num2">5</div>
+        </div>
+        <button class="buttonOn">SUBMIT</button>
+      </div>
+    </div>
+    
+    </body>
+</html>
